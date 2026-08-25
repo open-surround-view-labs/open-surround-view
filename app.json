@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "OpenSurroundView",
+    "slug": "open-surround-view",
+    "version": "2.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/images/icon.png",
+    "scheme": "opensurroundview",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.opensurroundview.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Access 4 camera feeds for 360° surround view",
+        "UIRequiresFullScreen": true,
+        "UIStatusBarHidden": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "org.opensurroundview.app",
+      "versionCode": 202,
+      "permissions": [
+        "CAMERA",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET"
+      ],
+      "softwareKeyboardLayoutMode": "pan",
+      "newArchEnabled": false,
+      "edgeToEdgeEnabled": true,
+      "allowBackup": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#000000"
+        }
+      ],
+      "expo-font",
+      "./plugins/withAndroidNetworkConfig"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {}
+    },
+    "sdkVersion": "54.0.0",
+    "platforms": ["ios", "android", "web"],
+    "androidStatusBar": {
+      "backgroundColor": "#000000"
+    }
+  }
+}
