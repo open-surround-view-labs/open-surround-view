@@ -24,7 +24,7 @@ The application does not include analytics, advertising, telemetry, user account
 - Android build tooling, or an Expo Application Services account
 
 ```bash
-git clone https://github.com/REPOSITORY_OWNER/open-surround-view.git
+git clone https://github.com/open-surround-view-labs/open-surround-view.git
 cd open-surround-view
 npm install
 npx expo run:android
